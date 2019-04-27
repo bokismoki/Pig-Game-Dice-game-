@@ -1,0 +1,141 @@
+body {
+    width: 60%;
+    margin: 32px auto;
+    background-color: lightblue;
+}
+
+main {
+    background-color: #0080ff;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 200px 1fr 200px;
+}
+
+
+/* NEW GAME */
+#newGame {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    align-self: center;
+    justify-self: center;
+}
+
+#newGameBtn {
+    border-radius: 10px;
+    padding: 1.2em 4em;
+    background-color: #cdf8ff;
+    border: solid 2px rgb(88, 247, 109);
+    color: rgb(49, 49, 49);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#newGameBtn:hover {
+    padding: 1.1em 3.9em;
+}
+
+
+/* SCORE INFO */
+#scoreInfo {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+#players {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: space-evenly;
+    width: 997.8px;
+    margin-bottom: 90px;
+    margin-top: -40px;
+    color: #016191;
+}
+
+.active {
+    color: #002d44;
+}
+
+#totalScore {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    display: flex;
+    justify-content: space-evenly;
+    align-self: center;
+    margin-top: -50px;
+    font-size: 70px;
+}
+
+#player1TotalScore {
+    background-color: orangered;
+    display: inline-block;
+    padding: 40px 110px;
+}
+
+#player2TotalScore {
+    background-color: orangered;
+    display: inline-block;
+    padding: 40px 110px;
+}
+
+#phaseScore {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 40px;
+}
+
+#player1PhaseScore {
+    background-color: lightcoral;
+    display: inline-block;
+    padding: 20px 50px;
+    align-self: center;
+}
+
+#player2PhaseScore {
+    background-color: lightcoral;
+    display: inline-block;
+    padding: 20px 50px;
+    align-self: center;
+}
+
+#dice {
+    border-radius: 10px;
+}
+
+
+/* CONTROLS */
+#controls {
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+    justify-self: center;
+    align-self: center;
+}
+
+#rollDiceBtn {
+    border-radius: 10px;
+    padding: .6em 2.5em;
+    border: none;
+    margin-right: 20px;
+    text-transform: uppercase;
+}
+
+#rollDiceBtn:hover {
+    padding: .53em 2.5em;
+}
+
+#holdBtn {
+    border-radius: 10px;
+    padding: .6em 3.5em;
+    border: none;
+    margin-left: 20px;
+    text-transform: uppercase;
+}
+
+#holdBtn:hover {
+    padding: .53em 3.5em;
+}
